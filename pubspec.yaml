@@ -1,0 +1,51 @@
+name: chronos_ai
+description: "Chronos AI - Your intelligent personal life organizer, powered by Atlas."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # State management
+  provider: ^6.1.2
+
+  # Local storage (no cloud, no accounts, fully offline)
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  shared_preferences: ^2.2.3
+
+  # Charts for the stats screen
+  fl_chart: ^0.68.0
+
+  # Local notifications ("smart" reminders)
+  flutter_local_notifications: ^17.2.2
+  timezone: ^0.9.4
+
+  # Voice input for talking to Atlas
+  speech_to_text: ^7.0.0
+  flutter_tts: ^4.0.2
+
+  # Nice animations
+  lottie: ^3.1.2
+  animations: ^2.0.11
+
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
